@@ -65,3 +65,88 @@ body {
 
 
 /*end branch*/
+
+/* summary  */
+
+.summary {
+    min-height: 33%;
+    border: 1px solid red;
+    margin: 10px;
+    position: relative;
+}
+
+.summary .content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.summary .content {
+    min-height: 100%;
+    border: 1px solid red;
+    text-align: center;
+    display: table;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.summary .fa {
+    position: absolute;
+    top: 50%;
+}
+
+.summary .prev {
+    left: 10px;
+}
+
+.summary .next {
+    right: 10px;
+    left: auto;
+}
+
+.summary .photo {
+    display: table-cell;
+    width: 50%;
+}
+
+.summary .service-summary {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.summary .service-summary .title {
+    margin-bottom: 10px;
+    display: inherit;
+}
+
+.summary .service-summary .description {
+    clear: both;
+}
+
+
+/*end summary  */
+
+
+/* services  */
+
+.services {
+    min-height: 33%;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+
+/*end services  */
+
+
+/* shopping-cart  */
+
+.shopping-cart {
+    min-height: 33%;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+
+/*end shopping-cart  */
