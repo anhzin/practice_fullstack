@@ -65,3 +65,80 @@ body {
 
 
 /*end branch*/
+
+
+/* summary  */
+
+.summary {
+    min-height: 33%;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+
+/*end summary  */
+
+
+/* services  */
+
+.services {
+    min-height: 33%;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+
+/*end services  */
+
+
+/* shopping-cart  */
+
+.shopping-cart {
+    min-height: 33%;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+.shopping-cart #header {
+    text-align: left;
+    padding: 10px;
+}
+
+.shopping-cart #header span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: gray;
+    text-align: left;
+    padding: 10px;
+}
+
+.shopping-cart .image {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+.shopping-cart .image img{
+    width: 50%;
+}
+.shopping-cart .right {
+    display: inline-block;
+    width: 50%;
+}
+.shopping-cart .right .title{
+    display: block;
+    padding: 20px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: gray;
+}
+.shopping-cart .right .description{
+    display: block;
+    padding: 20px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: gray;
+}
+
+/*end shopping-cart  */
