@@ -32,7 +32,7 @@ body {
     text-align: center;
 }
 
-.page .footer .copyright {
+.page .copyright {
     line-height: 70px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
@@ -66,15 +66,26 @@ body {
 
 /*end branch*/
 
+
 /* summary  */
+
 .summary {
     min-height: 33%;
     border: 1px solid red;
     margin: 10px;
 }
+
+
 /*end summary  */
 
+
 /*services*/
+
+.services {
+    min-height: 33%;
+    border: 1px solid red;
+    margin: 10px;
+}
 
 .services .item {
     display: inline-block;
@@ -82,19 +93,19 @@ body {
     margin: 5px;
 }
 
-.services .item .edit {
+.services .edit {
     float: left;
 }
 
-.services .item .shopping-basket {
+.services .shopping-basket {
     float: right;
 }
 
-.services .item .circle {
+.services .circle {
     margin: 0 auto;
 }
 
-.services .item .title {
+.services .title {
     display: block;
     color: blue;
     font-family: Arial, Helvetica, sans-serif;
@@ -102,7 +113,7 @@ body {
     padding: 10px;
 }
 
-.services .item .description {
+.services .description {
     display: block;
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
@@ -143,11 +154,17 @@ body {
     background: yellow;
 }
 
+
 /* shopping-cart  */
+
 .shopping-cart {
-   min-height: 33%;
+    min-height: 33%;
     border: 1px solid red;
     margin: 10px;
 }
+
+
 /*end shopping-cart  */
+
+
 /*end circle*/
