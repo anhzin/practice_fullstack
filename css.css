@@ -32,7 +32,7 @@ body {
     text-align: center;
 }
 
-.page .footer .copyright {
+.page .copyright {
     line-height: 70px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
@@ -65,6 +65,7 @@ body {
 
 
 /*end branch*/
+
 
 /* summary  */
 
@@ -115,12 +116,12 @@ body {
     vertical-align: middle;
 }
 
-.summary .service-summary .title {
+.summary .title {
     margin-bottom: 10px;
     display: inherit;
 }
 
-.summary .service-summary .description {
+.summary .description {
     clear: both;
 }
 
