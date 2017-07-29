@@ -1,0 +1,158 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+/*page*/
+
+.page {
+    width: 900px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.page .header {
+    height: 70px;
+    margin-bottom: 10px;
+    border: 1px solid red;
+}
+
+.page .content {
+    min-height: 100%;
+    border: 1px solid red;
+}
+
+.page .footer {
+    height: 70px;
+    margin-top: 10px;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.page .copyright {
+    line-height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: lightgray;
+}
+
+
+/*end page*/
+
+
+/*multi-column*/
+
+.multi-columns {
+    width: 100%;
+}
+
+.multi-columns .col-30 {
+    width: 30%;
+    float: left;
+}
+
+.multi-columns .col-70 {
+    width: 70%;
+    float: left;
+}
+
+.multi-columns .col-50 {
+    width: 50%;
+    float: left;
+}
+
+.multi-columns .pull-left {}
+
+.multi-columns .pull-left>* {
+    float: left;
+}
+
+.multi-columns .pull-right {}
+
+.multi-columns .pull-right>* {
+    float: right;
+}
+
+.multi-columns .branch {
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+
+/*end multi-column*/
+
+
+/*branch*/
+
+.branch {
+    display: inline-block;
+    border: 1px solid blue;
+}
+
+.branch .icon {
+    height: 40px;
+    width: 40px;
+}
+
+.branch .name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 14px;
+    vertical-align: top;
+}
+
+
+/*end branch*/
+
+
+/*main-nav*/
+
+.main-nav {
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+}
+
+.main-nav .item {
+    float: left;
+    text-align: center;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.main-nav .item .title {
+    text-decoration: none;
+    color: blue;
+    display: block;
+}
+
+.main-nav .item:hover {
+    background: #F1F1F1;
+    color: #333;
+    border-bottom: 3px solid lawngreen;
+}
+
+.main-nav .item .title:active {
+    color: orange;
+}
+
+.main-nav .item.active {
+    background: #F1F1F1;
+    color: #333;
+    border-bottom: 3px solid lawngreen;
+}
+
+.main-nav .item.active .title {
+    color: orange;
+}
+
+
+/*end main-nav*/
