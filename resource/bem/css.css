@@ -12,32 +12,36 @@ body {
 
 
 /*page*/
-/*page*/
-
 .page {
     width: 900px;
     margin: 0 auto;
 }
 
-.page .header {
+.page__header {
     height: 70px;
     margin-bottom: 10px;
     border: 1px solid red;
 }
 
-.page .content {
+.page__content {
     min-height: 100%;
     border: 1px solid red;
 }
 
-.page .footer {
+.page__footer {
     height: 70px;
     margin-top: 10px;
     border: 1px solid red;
     text-align: center;
 }
 
-.page .copyright {
+
+/*end page*/
+
+
+/*copyright*/
+
+.copyright {
     line-height: 70px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
@@ -45,7 +49,7 @@ body {
 }
 
 
-/*end page*/
+/*end copyright*/
 
 
 /*multi-column*/
@@ -54,37 +58,31 @@ body {
     width: 100%;
 }
 
-.multi-columns .col-30 {
+.multi-columns__col-30 {
     width: 30%;
     float: left;
 }
 
-.multi-columns .col-70 {
+.multi-columns__col-70 {
     width: 70%;
     float: left;
 }
 
-.multi-columns .col-50 {
+.multi-columns__col-50 {
     width: 50%;
     float: left;
 }
 
-.multi-columns .pull-left {}
+.multi-columns__pull-left {}
 
-.multi-columns .pull-left>* {
+.multi-columns__pull-left>* {
     float: left;
 }
 
-.multi-columns .pull-right {}
+.multi-columns__pull-right {}
 
-.multi-columns .pull-right>* {
+.multi-columns__pull-right>* {
     float: right;
-}
-
-.multi-columns .branch {
-    margin-left: 30px;
-    margin-top: 10px;
-    padding: 5px;
 }
 
 
@@ -94,16 +92,19 @@ body {
 /*branch*/
 
 .branch {
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 5px;
     display: inline-block;
     border: 1px solid blue;
 }
 
-.branch .icon {
+.branch__icon {
     height: 40px;
     width: 40px;
 }
 
-.branch .name {
+.branch__name {
     font-family: Arial, Helvetica, sans-serif;
     font-family: 14px;
     vertical-align: top;
@@ -121,36 +122,40 @@ body {
     width: 100%;
 }
 
-.main-nav .item {
+.main-nav__item {
     float: left;
     text-align: center;
     padding: 10px;
     list-style-type: none;
 }
 
-.main-nav .item .title {
+.main-nav__item__title {
     text-decoration: none;
     color: blue;
     display: block;
 }
 
-.main-nav .item:hover {
+.main-nav__item:hover {
     background: #F1F1F1;
     color: #333;
     border-bottom: 3px solid lawngreen;
 }
 
-.main-nav .item .title:active {
+.main-nav__item__title:active {
     color: orange;
 }
 
-.main-nav .item.active {
+.main-nav__item--active {
+    float: left;
+    text-align: center;
+    padding: 10px;
+    list-style-type: none;
     background: #F1F1F1;
     color: #333;
     border-bottom: 3px solid lawngreen;
 }
 
-.main-nav .item.active .title {
+.main-nav__item--active__title {
     color: orange;
 }
 
@@ -168,7 +173,7 @@ body {
     margin: 10px;
 }
 
-.slider .prev {
+.slider__prev {
     float: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
@@ -181,11 +186,11 @@ body {
     font-weight: 100;
 }
 
-.slider .prev::before {
+.slider__prev::before {
     content: '\003C';
 }
 
-.slider .next {
+.slider__next {
     content: '\0000';
     float: right;
     font-family: Arial, Helvetica, sans-serif;
@@ -198,22 +203,22 @@ body {
     right: 50px;
 }
 
-.slider .next::before {
+.slider__next::before {
     content: '\003E';
 }
 
-.slider .content {
+.slider__content {
     height: 300px;
     border: 1px solid red;
 }
 
-.slider .content .photo {
+.slider__content__photo {
     width: 50%;
     max-height: 100%;
     float: left;
 }
 
-.slider .summary {
+.slider__summary {
     display: block;
     align-items: center;
     float: right;
@@ -221,21 +226,12 @@ body {
     padding: 20px;
 }
 
-.slider .summary .photo {
-    padding: 30px;
-}
-
-.slider .summary .content {
-    align-self: center;
-    padding: 30px;
-}
-
-.slider .summary .title {
+.slider__summary__title {
     color: #FFFFFF;
     font-size: 24px;
 }
 
-.slider .summary .description {
+.slider__summary__description {
     color: #FFFFFF;
     font-size: 18px;
 }
@@ -257,7 +253,7 @@ body {
     display: inline-block;
 }
 
-.signup-primary .icon {
+.signup-primary__icon {
     width: 25px;
     height: 25px;
     line-height: 25px;
@@ -267,11 +263,11 @@ body {
     color: #468DF1;
 }
 
-.signup-primary .icon:before {
+.signup-primary__icon:before {
     content: "\2713";
 }
 
-.signup-primary .text {
+.signup-primary__text {
     font-size: 15px;
     color: #FFFFFF;
     margin-left: 10px;
@@ -288,7 +284,7 @@ body {
     margin: 10px;
 }
 
-.shopping-cart #header {
+.shopping-cart__header {
     display: block;
     text-align: left;
     padding: 10px;
@@ -299,26 +295,23 @@ body {
     padding: 10px;
 }
 
-.content-shopping-cart {
+.shopping-cart__content{
     margin: 10px;
 }
 
-.shopping-cart .image {
+.shopping-cart__image {
     display: inline-block;
     width: 50%;
     float: left;
 }
 
-.shopping-cart img {
-    width: 50%;
-}
 
-.shopping-cart .summary {
+.shopping-cart__summary {
     display: inline-block;
     width: 50%;
 }
 
-.shopping-cart .title {
+.shopping-cart__summary__title {
     display: block;
     padding: 10px;
     text-align: left;
@@ -327,7 +320,7 @@ body {
     color: gray;
 }
 
-.shopping-cart .description {
+.shopping-cart__summary__description {
     display: block;
     padding: 10px;
     text-align: left;
