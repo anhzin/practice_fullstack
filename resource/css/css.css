@@ -36,7 +36,13 @@ body {
     text-align: center;
 }
 
-.page .copyright {
+
+/*end page*/
+
+
+/*copy right*/
+
+.copyright {
     line-height: 70px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
@@ -44,7 +50,7 @@ body {
 }
 
 
-/*end page*/
+/*end copy-right*/
 
 
 /*multi-column*/
@@ -220,15 +226,6 @@ body {
     padding: 20px;
 }
 
-.slider .summary .photo {
-    padding: 30px;
-}
-
-.slider .summary .content {
-    align-self: center;
-    padding: 30px;
-}
-
 .slider .summary .title {
     color: #FFFFFF;
     font-size: 24px;
@@ -243,7 +240,7 @@ body {
 /*end slider*/
 
 
-/*btn*/
+/*signup-primary*/
 
 .signup-primary {
     padding: 7px 10px;
@@ -278,7 +275,7 @@ body {
 }
 
 
-/*end btn*/
+/*end signup-primary*/
 
 
 /*services*/
@@ -348,9 +345,6 @@ body {
     background: blue;
 }
 
-
-/*end circle*/
-
 .show .circle {
     background: red;
 }
@@ -360,16 +354,7 @@ body {
 }
 
 
-/* shopping-cart  */
-
-.shopping-cart {
-    min-height: 33%;
-    border: 1px solid red;
-    margin: 10px;
-}
-
-
-/*end shopping-cart  */
+/*end circle*/
 
 
 /* shopping-cart  */

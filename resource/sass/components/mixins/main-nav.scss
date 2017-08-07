@@ -1,0 +1,36 @@
+@mixin create-main-nav() {
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    &__item {
+        float: left;
+        text-align: center;
+        padding: 10px;
+        list-style-type: none;
+        &__title {
+            text-decoration: none;
+            color: $default-page-color-grey;
+            display: block;
+        }
+        &__title:active {
+            color: $default-color-link-active;
+        }
+    }
+    &__item:hover {
+        background: $default-page-color-white;
+        color: $default-page-color-grey;
+        border-bottom: 3px solid $default-color-link-bottom;
+    }
+    &__item--active {
+        float: left;
+        text-align: center;
+        padding: 10px;
+        list-style-type: none;
+        background: $default-page-color-white;
+        color: $default-page-color-grey;
+        border-bottom: 3px solid $default-color-link-bottom;
+        &__title {
+            color: $default-color-link-active;
+        }
+    }
+}

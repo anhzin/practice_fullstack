@@ -1,0 +1,9 @@
+@import "./mixins/page.scss";
+/*page*/
+
+.page {
+    @include create-page($default-page-width);
+}
+
+
+/*end page*/

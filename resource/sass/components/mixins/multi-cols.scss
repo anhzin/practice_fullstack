@@ -1,0 +1,23 @@
+@mixin create-multi-cols(){
+     width: 100%;
+    &__col-30 {
+        width: 30%;
+        float: left;
+    }
+    &__col-70 {
+        width: 70%;
+        float: left;
+    }
+    &__col-50 {
+        width: 50%;
+        float: left;
+    }
+    &__pull-left {}
+    &__pull-left>* {
+        float: left;
+    }
+    &__pull-right {}
+    &__pull-right>* {
+        float: right;
+    }
+}

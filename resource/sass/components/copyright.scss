@@ -1,0 +1,10 @@
+@import "./mixins/copyright.scss";
+
+/*copy right*/
+
+.copyright {
+    @include create-copyright();
+}
+
+
+/*end copy-right*/

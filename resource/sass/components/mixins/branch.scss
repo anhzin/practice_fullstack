@@ -1,0 +1,16 @@
+@mixin create-branch($icon-width,$icon-height) {
+    display: inline-block;
+    border: 1px solid $default-page-color;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    &__icon {
+        height: $icon-width;
+        width: $icon-height;
+    }
+    &__name {
+        font-family: $default-font-family;
+        font-family: $default-text-size;
+        vertical-align: top;
+    }
+}

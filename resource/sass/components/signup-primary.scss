@@ -1,0 +1,10 @@
+@import "./mixins/signup-primary.scss";
+
+/*signup-primary*/
+
+.signup-primary {
+   @include create-button-signup() ;
+}
+
+
+/*end signup-primary*/
