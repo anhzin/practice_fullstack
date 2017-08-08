@@ -1,0 +1,19 @@
+@mixin create-page($page-width, $page-header-width:$default-page-header-height, $page-footer-height:$default-page-footer-height) {
+    width: $page-width;
+    margin: 0 auto;
+    &__header {
+        height: $page-header-width;
+        margin-bottom: 10px;
+        border: 1px solid $default-color-page-border;
+    }
+    &__content {
+        min-height: 100%;
+        border: 1px solid $default-color-page-border;
+    }
+    &__footer {
+        height: $page-footer-height;
+        margin-top: 10px;
+        border: 1px solid $default-color-page-border;
+        text-align: center;
+    }
+}

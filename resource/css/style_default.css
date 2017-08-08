@@ -1,0 +1,92 @@
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+/*page*/
+.page {
+  width: 900px;
+  margin: 0 auto; }
+  .page__header {
+    height: 70px;
+    margin-bottom: 10px;
+    border: 1px solid red; }
+  .page__content {
+    min-height: 100%;
+    border: 1px solid red; }
+  .page__footer {
+    height: 70px;
+    margin-top: 10px;
+    border: 1px solid red;
+    text-align: center; }
+
+/*end page*/
+/*multi-column*/
+.multi-columns {
+  width: 100%; }
+  .multi-columns__col-30 {
+    width: 30%;
+    float: left; }
+  .multi-columns__col-70 {
+    width: 70%;
+    float: left; }
+  .multi-columns__col-50 {
+    width: 50%;
+    float: left; }
+  .multi-columns__pull-left > * {
+    float: left; }
+  .multi-columns__pull-right > * {
+    float: right; }
+  .multi-columns__branch {
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 5px; }
+
+/*end multi-column*/
+/*branch*/
+.branch {
+  display: inline-block;
+  border: 1px solid green;
+  margin-left: 30px;
+  margin-top: 10px;
+  padding: 5px; }
+  .branch__icon {
+    height: 40px;
+    width: 40px; }
+  .branch__name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 14px;
+    vertical-align: top; }
+
+/*end branch*/
+/*main-nav*/
+.main-nav {
+  list-style-type: none;
+  text-align: center;
+  width: 100%; }
+  .main-nav__item {
+    float: left;
+    text-align: center;
+    padding: 10px;
+    list-style-type: none; }
+    .main-nav__item__title {
+      text-decoration: none;
+      color: blue;
+      display: block; }
+      .main-nav__item__title:active {
+        color: gray; }
+    .main-nav__item--active {
+      background: #FFFFFF;
+      border-bottom: 3px solid pink; }
+      .main-nav__item--active__title {
+        color: gray; }
+    .main-nav__item:hover {
+      background: #FFFFFF;
+      border-bottom: 3px solid pink; }
+
+/*end main-nav*/

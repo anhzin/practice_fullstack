@@ -1,0 +1,30 @@
+@mixin create-main-nav() {
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    &__item {
+        float: left;
+        text-align: center;
+        padding: 10px;
+        list-style-type: none;
+        &__title {
+            text-decoration: none;
+            color: $default-color-text-highlight;
+            display: block;
+            &:active {
+                color: $default-color-text-highlight-active;
+            }
+        }
+        &--active {
+            background: $default-color-white;
+            border-bottom: 3px solid $default-color-line-bottom-highlight;
+            &__title {
+                color: $default-color-text-highlight-active;
+            }
+        }
+        &:hover {
+            background: $default-color-white;
+            border-bottom: 3px solid $default-color-line-bottom-highlight;
+        }
+    }
+}
