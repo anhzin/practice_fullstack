@@ -42,10 +42,6 @@ body {
     float: left; }
   .multi-columns__pull-right > * {
     float: right; }
-  .multi-columns__branch {
-    margin-left: 30px;
-    margin-top: 10px;
-    padding: 5px; }
 
 /*end multi-column*/
 /*branch*/
