@@ -1,8 +1,9 @@
+@import "../../components/variables.scss";
 //page
-$default-color-page-border: red;
+$default-page-color-border: yellow;
 //branch
-$default-color-branch-border: green;
+$default-branch-color-border: green;
 // highlight
 $default-color-text-highlight: blue;
-$default-color-text-highlight-active: gray;
-$default-color-line-bottom-highlight: pink;
+$default-color-text-highlight-active: pink;
+$default-color-line-bottom-highlight: purple;

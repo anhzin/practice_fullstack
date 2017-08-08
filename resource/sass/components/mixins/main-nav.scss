@@ -16,14 +16,14 @@
             }
         }
         &--active {
-            background: $default-color-white;
+            background: white;
             border-bottom: 3px solid $default-color-line-bottom-highlight;
             &__title {
                 color: $default-color-text-highlight-active;
             }
         }
         &:hover {
-            background: $default-color-white;
+            background: white;
             border-bottom: 3px solid $default-color-line-bottom-highlight;
         }
     }
