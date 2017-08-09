@@ -1,0 +1,68 @@
+@mixin create-slider($slider-content-height:$default-slider-content-height) {
+    border: 1px solid red;
+    background-color: grey;
+    position: relative;
+    padding: 0 90px;
+    margin: 10px;
+    &__prev {
+        float: left;
+        font-family: $default-font-family;
+        font-size: $default-slider-prev-font-size;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: calc(50% - 30px);
+        left: 50px;
+        font-weight: 100;
+        &::before {
+            content: '\003C';
+        }
+    }
+    &__next {
+        content: '\0000';
+        float: right;
+        font-family: $default-font-family;
+        font-size: $default-slider-next-font-size;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: calc(50% - 30px);
+        right: 50px;
+        &::before {
+            content: '\003E';
+        }
+    }
+    &__content {
+        height: $slider-content-height;
+        border: 1px solid red;
+        &__photo {
+            width: 50%;
+            max-height: 100%;
+            float: left;
+        }
+    }
+    &__summary {
+        display: block;
+        align-items: center;
+        float: right;
+        width: 50%;
+        padding: 20px;
+        &__photo {
+            padding: 30px;
+        }
+        &__content {
+            align-self: center;
+            padding: 30px;
+        }
+        &__title {
+            color: #FFFFFF;
+            font-size: $default-slider-summary-title-font-size;
+        }
+        &__description {
+            color: #FFFFFF;
+            font-size: $default-slider-summary-description-font-size;
+        }
+    }
+}
