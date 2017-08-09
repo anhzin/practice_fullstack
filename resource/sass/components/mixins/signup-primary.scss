@@ -1,0 +1,27 @@
+@mixin create-signup-primary() {
+    padding: 7px 10px;
+    border: 1px solid $default-signup-primary-border-color;
+    background-color: $default-signup-primary-border-background-color;
+    >* {
+        vertical-align: middle;
+        display: inline-block;
+    }
+    &__icon {
+        width: $default-signup-primary-icon-width;
+        height: $default-signup-primary-icon-height;
+        line-height: $default-signup-primary-icon-height;
+        border: 1px solid;
+        background: #FFFFFF;
+        border-radius: 50%;
+        color: $default-signup-primary-border-background-color;
+        &:before {
+            content: "\2713";
+        }
+    }
+    &__text {
+        font-size: $default-signup-primary-font-size;
+        color: #FFFFFF;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+}
