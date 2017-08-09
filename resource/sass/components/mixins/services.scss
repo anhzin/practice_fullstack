@@ -1,0 +1,61 @@
+@mixin create-services() {
+    min-height: 33%;
+    border: 1px solid $default-page-color-border;
+    margin: 10px;
+    &__item {
+        display: inline-block;
+        width: 30%;
+        margin: 5px;
+        &--edit {
+            float: left;
+            &__circle {
+                background: $default-services-item-edit-circle-color;
+            }
+        }
+        &--show {
+            &__circle {
+                background: $default-services-item-show-circle-color;
+            }
+        }
+        &--shopping-basket {
+            float: right;
+            &__circle {
+                background: $default-services-item-shopping-basket-circle-color;
+            }
+        }
+        &__circle {
+            margin: 0 auto;
+            width: $default-services-item-circle-width;
+            height: $default-services-item-circle-height;
+            -moz-border-radius: $default-services-item-circle-border-radius;
+            -webkit-border-radius: $default-services-item-circle-border-radius;
+            border-radius: $default-services-item-circle-border-radius;
+            &__fa {
+                display: inline-block;
+                width: $default-services-item-circle-fa-width;
+                height: $default-services-item-circle-fa-height;
+                text-align: center;
+                vertical-align: bottom;
+                line-height: $default-services-item-circle-fa-height;
+                color: white;
+                font-size: $default-services-item-circle-fa-font-size;
+                font-style: normal;
+                font-family: FontAwesome;
+            }
+        }
+        &__title {
+            display: block;
+            color: $default-services-item-title-color;
+            font-family: $default-font-family;
+            font-size: $default-services-item-title-font-size;
+            padding: 10px;
+        }
+        &__description {
+            display: block;
+            color: $default-services-item-description-color;
+            font-family: $default-font-family;
+            font-size: $default-services-item-description-font-size;
+            padding: 10px;
+        }
+    }
+}
