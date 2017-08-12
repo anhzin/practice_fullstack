@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+/*page*/
+.page {
+  width: 100%;
+  border: 1px solid red;
+  margin: 0 auto; }
+  .page__header {
+    height: 100px;
+    border: 1px solid red; }
+
+/*end page*/
+/*multi-cols*/
+.multi-cols {
+  width: 100%;
+  display: inline-block; }
+  .multi-cols__col-30 {
+    float: left;
+    width: 30%; }
+  .multi-cols__col-70 {
+    float: left;
+    width: 70%; }
+
+/*end multi-cols*/
+.branch {
+  display: inline-block;
+  border: 1px solid red;
+  margin-left: 30px; }
+
+.main-nav {
+  width: 100%;
+  text-align: center;
+  list-style-type: none; }
+  .main-nav__item {
+    float: left;
+    text-align: center;
+    padding: 10px;
+    list-style-type: none;
+    display: inline-block; }
+    .main-nav__item__title {
+      text-decoration: none;
+      color: white; }
+      .main-nav__item__title--active {
+        color: yellow; }

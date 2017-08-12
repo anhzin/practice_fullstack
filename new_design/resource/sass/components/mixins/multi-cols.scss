@@ -1,0 +1,12 @@
+@mixin create-multi-cols() {
+    width: 100%;
+    display:inline-block;
+    &__col-30 {
+        float: left;
+        width: 30%;
+    }
+    &__col-70 {
+        float: left;
+        width: 70%;
+    }
+}
