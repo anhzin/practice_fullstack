@@ -1,12 +1,39 @@
 @mixin create-multi-cols() {
     width: 100%;
-    display:inline-block;
-    &__col-30 {
+    display: flex;
+    &__col-20 {
+        flex: 1;
+        width: 20%;
         float: left;
+    }
+    &__col-30 {
+        flex: 1;
         width: 30%;
+        float: left;
+    }
+    &__col-50 {
+        flex: 1;
+        width: 50%;
+        float: left;
     }
     &__col-70 {
-        float: left;
+        flex: 1;
         width: 70%;
+        float: left;
+    }
+    &__col-80 {
+        flex: 1;
+        width: 80%;
+        float: left;
+    }
+    &__pull-left {
+        >* {
+            float: left;
+        }
+    }
+    &__pull-right {
+        >* {
+            float: right;
+        }
     }
 }

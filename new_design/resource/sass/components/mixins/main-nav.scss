@@ -1,18 +1,37 @@
 @mixin create-main-nav() {
-    width: 100%;
-    text-align: center;
     list-style-type: none;
+    text-align: center;
+    margin-right: 100px;
     &__item {
         float: left;
         text-align: center;
         padding: 10px;
         list-style-type: none;
-        display: inline-block;
-        &__title{
+        &__title {
             text-decoration: none;
-            color: white;
-            &--active{
-                color: yellow;
+            color: $default-main-nav-item-text-color;
+            font-size: 14px;
+            padding: 5px;
+            &:active {
+                color: $default-main-nav-item-text-color-active;
+            }
+            &:hover {
+                color: $default-main-nav-item-text-color-active;
+                border-top: 1px solid $default-main-nav-item-text-color-active;
+                border-bottom: 1px solid $default-main-nav-item-text-color-active;
+            }
+        }
+        &--active {
+            &__title {
+                font-size: 14px;
+                text-decoration: none;
+                color: $default-main-nav-item-text-color-active;
+                padding: 5px;
+                &:hover {
+                    color: $default-main-nav-item-text-color-active;
+                    border-top: 1px solid $default-main-nav-item-text-color-active;
+                    border-bottom: 1px solid $default-main-nav-item-text-color-active;
+                }
             }
         }
     }

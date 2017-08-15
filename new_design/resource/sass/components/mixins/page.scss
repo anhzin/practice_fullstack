@@ -1,9 +1,13 @@
-@mixin create-page(){
+@mixin create-page() {
     width: 100%;
-    border: 1px solid $default-page-border-color;
     margin: 0 auto;
-    &__header{
-        height: 100px;
-        border: 1px solid $default-page-border-color;
+    &__header {
+        min-height: 70px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        &__infor {
+            position: fixed;
+            background-color: $default-page-header-background-color;
+        }
     }
+    &__content {}
 }

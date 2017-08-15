@@ -1,0 +1,51 @@
+@mixin create-introdution() {
+    position: relative;
+    vertical-align: middle;
+    &__infor {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 25%;
+        &__title {
+            color: #fff;
+            display: table;
+            margin: 0 auto 30px;
+            padding: 30px;
+            font-size: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            letter-spacing: 5px;
+            font-weight: 100;
+        }
+        &__time-setup {
+            margin: 0 auto;
+            color: #fff;
+            font-size: 70px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-weight: 100;
+        }
+        &__explore {
+            display: block;
+            text-align: center;
+            margin: 45px auto 0;
+            font-size: 14px;
+            padding: 15px 30px;
+            border: 1px solid #fcd088;
+            color: #fcd088;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            background-color: transparent;
+        }
+    }
+    &__background {
+        vertical-align: middle;
+        border: 0;
+        opacity: 0.9;
+        max-width: 100%;
+        height: auto;
+        z-index: 0;
+    }
+}
