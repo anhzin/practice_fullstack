@@ -1,0 +1,47 @@
+@mixin create-introdution($introduction-font-weight,$introduction-text-spacing) {
+    position: relative;
+    vertical-align: middle;
+    &__infor {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 25%;
+        &__title {
+            @include create-text-properties($introduction-font-weight,$introduction-text-spacing);
+            color: white;
+            display: table;
+            margin: 0 auto 30px;
+            padding: 30px;
+            font-size: $defaul-introduction-infor-title-font-size;
+            border-bottom: 1px solid $default-border-bottom-color;
+        }
+        &__time-setup {
+            @include create-text-properties($introduction-font-weight,$introduction-text-spacing);
+            margin: 0 auto;
+            color: white;
+            font-size: $defaul-introduction-infor-time-setup-font-size;
+            display: block;
+            text-transform: uppercase;
+        }
+        &__explore {
+            @include create-text-properties($introduction-font-weight,$introduction-text-spacing);
+            display: block;
+            margin: 45px auto 0;
+            font-size: $defaul-introduction-infor-explore-font-size;
+            padding: 15px 30px;
+            border: 1px solid $default-color-active;
+            color: $default-color-active;
+            text-transform: uppercase;
+            background-color: transparent;
+        }
+    }
+    &__background {
+        vertical-align: middle;
+        border: 0;
+        opacity: 0.8;
+        max-width: 100%;
+        height: auto;
+        margin-top: -5px;
+        z-index: 0;
+    }
+}

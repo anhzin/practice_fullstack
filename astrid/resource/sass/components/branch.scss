@@ -1,0 +1,6 @@
+@import "./mixins/branch.scss";
+/* branch */
+.branch{
+    @include create-branch($default-branch-text-color,$default-branch-font-size);
+}
+/*end branch*/

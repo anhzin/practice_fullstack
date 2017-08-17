@@ -1,0 +1,9 @@
+@mixin create-list() {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    &__item {
+        display: inline-block;
+        text-align: center;
+    }
+}

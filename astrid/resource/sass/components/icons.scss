@@ -1,0 +1,4 @@
+@import "./mixins/icons.scss";
+.icon {
+    @include create-icons($default-color-active);
+}
