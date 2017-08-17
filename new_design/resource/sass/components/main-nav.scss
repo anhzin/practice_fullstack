@@ -1,7 +1,0 @@
-@import "./mixins/main-nav";
-
-/*main-nav*/
-.main-nav {
-    @include create-main-nav();
-}
-/*end main-nav*/

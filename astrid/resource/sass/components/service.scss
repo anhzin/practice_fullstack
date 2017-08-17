@@ -1,0 +1,6 @@
+@import "./mixins/service.scss";
+/* service */
+.services{
+    @include create-service($defaul-service-title-font-size,$defaul-services-content-item-title-font-size,$defaul-services-content-item-desc-font-size,$defaul-services-content-item-desc-font-color);
+}
+/*end service*/

@@ -1,0 +1,13 @@
+@mixin create-page($page-header-height) {
+    width: 100%;
+    margin: 0 auto;
+    &__header {
+        min-height: $page-header-height;
+        border-bottom: 1px solid $default-border-bottom-color;
+        background-color: $default-page-header-background-color;
+        &__content {
+            margin: auto 50px;
+        }
+    }
+    &__content {}
+}

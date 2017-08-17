@@ -1,0 +1,31 @@
+@mixin create-icon($color-active) {
+    font-style: normal;
+    font-size: 3em;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 100;
+    color: $color-active;
+    display: inline-block;
+    font-family: FontAwesome;
+}
+
+@mixin create-icons($color-active) {
+    &-calc {
+        @include create-icon($color-active);
+        &::before {
+            content: "\f1ec";
+        }
+    }
+    &-chart {
+        @include create-icon($color-active);
+        &::before {
+            content: "\f201";
+        }
+    }
+    &-doc {
+        @include create-icon($color-active);
+        &::before {
+            content: "\f1c6"
+        }
+    }
+}
