@@ -1,0 +1,21 @@
+@import "./list.scss";
+@mixin create-main-nav($color-active) {
+    @include create-list();
+    &__item {
+        padding: 10px;
+        &__title {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            padding: 5px;
+            &:active {
+                color: $color-active;
+            }
+            &:hover {
+                color: $color-active;
+                border-top: 1px solid $color-active;
+                border-bottom: 1px solid $color-active;
+            }
+        }
+    }
+}

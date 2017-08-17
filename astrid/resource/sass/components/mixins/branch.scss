@@ -1,0 +1,6 @@
+@import "./text.scss";
+@mixin create-branch($branch-color, $branch-font-size) {
+    color: $branch-color;
+    font-size: $branch-font-size;
+    @include create-text-properties($defaul-font-weight);
+}

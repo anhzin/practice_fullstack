@@ -1,0 +1,7 @@
+@import "./mixins/main-nav";
+
+/*main-nav*/
+.main-nav {
+    @include create-main-nav($default-color-active);
+}
+/*end main-nav*/
