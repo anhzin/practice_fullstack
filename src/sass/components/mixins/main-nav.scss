@@ -1,0 +1,33 @@
+@import "./list.scss";
+@mixin create-item-main-nav(){
+    float: left;
+    text-align: center;
+    padding: 10px;
+    list-style-type: none;
+}
+@mixin create-main-nav() {
+    @include create-list();
+    &__item {      
+        @include create-item-main-nav();
+        &__title {
+            text-decoration: none;
+            color: $color-text-highlight;
+            display: block;
+            &:active {
+                color: $color-text-highlight-active;
+            }
+        }
+        &--active {
+            @include create-item-main-nav();
+            background: white;
+            border-bottom: 3px solid $color-line-bottom-highlight;
+            &__title {
+                color: $color-text-highlight-active;
+            }
+        }
+        &:hover {
+            background: white;
+            border-bottom: 3px solid $color-line-bottom-highlight;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@import "./mixins/slider.scss";
+
+/*slider*/
+.slider {
+    @include create-slider($slider-content-height);
+}
+/*end slider*/

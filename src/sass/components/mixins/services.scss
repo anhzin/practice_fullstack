@@ -1,0 +1,67 @@
+@import "./list.scss";
+@mixin create-item-service()
+{
+    display: inline-block;
+    width: 30%;
+    margin: 5px;
+}
+@mixin create-services() {
+    @include create-list();
+    &__item {
+        @include create-item-service();
+        &--edit {
+            @include create-item-service();
+            float: left;
+            &__circle {
+                background: $services-item-edit-circle-color;
+            }
+        }
+        &--show {
+            @include create-item-service();
+            &__circle {
+                background: $services-item-show-circle-color;
+            }
+        }
+        &--shopping-basket {
+            @include create-item-service();
+            float: right;
+            &__circle {
+                background: $services-item-shopping-basket-circle-color;
+            }
+        }
+        &__circle {
+            margin: 0 auto;
+            width: $services-item-circle-width;
+            height: $services-item-circle-height;
+            -moz-border-radius: $services-item-circle-border-radius;
+            -webkit-border-radius: $services-item-circle-border-radius;
+            border-radius: $services-item-circle-border-radius;
+            &__fa {
+                display: inline-block;
+                width: $services-item-circle-fa-width;
+                height: $services-item-circle-fa-height;
+                text-align: center;
+                vertical-align: bottom;
+                line-height: $services-item-circle-fa-height;
+                color: white;
+                font-size: $services-item-circle-fa-font-size;
+                font-style: normal;
+                font-family: FontAwesome;
+            }
+        }
+        &__title {
+            display: block;
+            color: $services-item-title-color;
+            font-family: $default-font-family;
+            font-size: $services-item-title-font-size;
+            padding: 10px;
+        }
+        &__description {
+            display: block;
+            color: $services-item-description-color;
+            font-family: $default-font-family;
+            font-size: $services-item-description-font-size;
+            padding: 10px;
+        }
+    }
+}

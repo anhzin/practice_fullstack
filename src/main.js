@@ -1,0 +1,10 @@
+var homePage = new HomePage();
+homePage.render("body");
+var headerPage = new HeaderPage();
+headerPage.render(".page__header");
+var sliderPage = new SliderPage();
+sliderPage.render(".page__content");
+var servicePage = new ServicePage();
+servicePage.render(".page__content");
+var shoppingCartPage = new ShoppingCartPage();
+shoppingCartPage.render(".page__content");

@@ -1,0 +1,7 @@
+@import "./mixins/branch.scss";
+
+/*branch*/
+.branch {
+    @include create-branch($branch-icon-width, $branch-icon-height);
+}
+/*end branch*/

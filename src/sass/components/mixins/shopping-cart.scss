@@ -1,0 +1,43 @@
+@mixin create-shopping-cart() {
+    min-height: 33%;
+    border: 1px solid red;
+    margin: 10px;
+    &__header {
+        display: block;
+        text-align: left;
+        padding: 10px;
+        font-family: $default-font-family;
+        font-size: $shopping-cart-header-font-size;
+        color: $shopping-cart-header-font-color;
+        text-align: left;
+        padding: 10px;
+    }
+    &__content {
+        margin: 10px;
+        &__image {
+            display: inline-block;
+            width: 50%;
+            float: left;
+        }
+        &__summary {
+            display: inline-block;
+            width: 50%;
+            &__title {
+                display: block;
+                padding: 10px;
+                text-align: left;
+                font-family: $default-font-family;
+                font-size: $shopping-cart-content-summary-tilte-font-size;
+                color: $shopping-cart-content-summary-tilte-font-color;
+            }
+            &__description {
+                display: block;
+                padding: 10px;
+                text-align: left;
+                font-family: $default-font-family;
+                font-size: $shopping-cart-content-summary-description-font-size;
+                color: $shopping-cart-content-summary-description-font-color;
+            }
+        }
+    }
+}
