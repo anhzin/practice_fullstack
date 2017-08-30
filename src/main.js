@@ -1,2 +1,2 @@
 var homePage = new HomePage();
-homePage.render();
+homePage.render("body");

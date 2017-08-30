@@ -7,10 +7,18 @@
 </head>
 
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./src/helpers/uiHelper.js"></script>
-    <script src="./src/pages/home/home.js"></script>
-    <script src="./src/main.js"></script>
+    <script src="./node_modules/systemjs/dist/system.src.js"></script>
+    <script>
+        System.config({
+            packages: {
+                "ts": {
+                    main: "main.js",
+                    defaultJsExtension: true
+                }
+            }
+        });
+        System.import("ts/main");
+    </script>
 </body>
 
 </html>

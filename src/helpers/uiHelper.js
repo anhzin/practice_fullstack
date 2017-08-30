@@ -5,12 +5,13 @@
     }
 
     function getHtml(url) {
-        var promise = new Promise(function (resolve, reject) {
-            $.get(url, function (html) {
-                resolve(html);
-            }).catch((error) => {
-                reject(error);
-            });
+        var promise = PromiseFactory.create();
+        $.get(url, function (html) {
+            console.log("getHtml uiHelper");
+            promise.resolve(html);
+        }).catch(function (error) {
+            console.log("catch in uiHelper");
+            promise.reject(error);
         });
         return promise;
     }

@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "module": "system"
+    },
+    "include": [
+        "ts/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
