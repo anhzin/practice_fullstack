@@ -3,21 +3,23 @@
 
 <head>
     <title> Prechu </title>
-    <link rel="stylesheet" type="text/css" href="css.css" />
+    <link rel="stylesheet" type="text/css" href="./resources/css/style_blue.css" />
 </head>
 
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./node_modules/systemjs/dist/system.src.js"></script>
     <script>
         System.config({
             packages: {
                 "ts": {
-                    main: "main.js",
                     defaultJsExtension: true
                 }
             }
         });
-        System.import("ts/main");
+        System.import("ts/main.js").catch(function (err) {
+            console.error(err);
+        });
     </script>
 </body>
 

@@ -1,0 +1,63 @@
+@import "./list.scss";
+@mixin create-item-service() {
+    display: inline-block;
+    width: 30%;
+    margin: 5px;
+}
+
+@mixin create-item-service-background() {
+    margin: 0 auto;
+    width: $services-item-width;
+    height: $services-item-height;
+    -moz-border-radius: $services-item-border-radius;
+    -webkit-border-radius: $services-item-border-radius;
+    border-radius: $services-item-border-radius;
+    display: inline-block;
+    width: $services-item-width;
+    height: $services-item-height;
+    text-align: center;
+    vertical-align: bottom;
+    line-height: $services-item-height;
+    color: white;
+    font-size: $services-item-font-size;
+    font-style: normal;
+    font-family: FontAwesome;
+}
+
+@mixin create-services() {
+    @include create-list();
+    &__item {
+        @include create-item-service();
+        &--edit {
+            @include create-item-service();
+            @include create-item-service-background();
+            float: left;
+            background: $services-item-edit-color;
+        }
+        &--show {
+            @include create-item-service();
+            @include create-item-service-background();
+            background: $services-item-show-color;
+        }
+        &--shopping-basket {
+            @include create-item-service();
+            @include create-item-service-background();
+            float: right;
+            background: $services-item-shopping-basket-color;
+        }
+        &__title {
+            display: block;
+            color: $services-item-title-color;
+            font-family: $default-font-family;
+            font-size: $services-item-title-font-size;
+            padding: 10px;
+        }
+        &__description {
+            display: block;
+            color: $services-item-description-color;
+            font-family: $default-font-family;
+            font-size: $services-item-description-font-size;
+            padding: 10px;
+        }
+    }
+}

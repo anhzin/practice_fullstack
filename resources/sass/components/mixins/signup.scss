@@ -1,0 +1,27 @@
+@mixin create-signup() {
+    padding: 7px 10px;
+    border: 1px solid $signup-border-color;
+    background-color: $signup-border-background-color;
+    >* {
+        vertical-align: middle;
+        display: inline-block;
+    }
+    &__icon {
+        width: $signup-icon-width;
+        height: $signup-icon-height;
+        line-height: $signup-icon-height;
+        border: 1px solid;
+        background: #FFFFFF;
+        border-radius: 50%;
+        color: $signup-border-background-color;
+        &:before {
+            content: "\2713";
+        }
+    }
+    &__text {
+        font-size: $signup-font-size;
+        color: #FFFFFF;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+}

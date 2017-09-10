@@ -1,6 +1,11 @@
 {
+
     "compilerOptions": {
-        "module": "system"
+        "baseUrl": ".",
+        "module": "system",
+        "target": "es6",
+        "moduleResolution": "node"
+
     },
     "include": [
         "ts/**/*.ts"

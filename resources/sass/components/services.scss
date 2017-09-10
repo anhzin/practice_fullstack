@@ -1,0 +1,7 @@
+@import "./mixins/services.scss";
+
+/*services*/
+.services {
+    @include create-services();
+}
+/*end services*/
