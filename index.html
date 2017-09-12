@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Prechu</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style_default.css" />
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./node_modules/systemjs/dist/system.src.js"></script>
+    <script>
+        System.config({
+            packages: {
+                "ts": {
+                    defaultJsExtension: true
+                }
+            }
+        });
+        System.import("ts/main.js").catch(function (err) {
+            console.error(err);
+        });
+    </script>
+</body>
+
+</html>

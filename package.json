@@ -1,0 +1,33 @@
+{
+  "name": "practice-fullstack",
+  "version": "1.0.0",
+  "description": "practice fullstack",
+  "main": "index.js",
+  "dependencies": {
+    "lite-server": "^2.3.0",
+    "node": "^8.3.0",
+    "node-sass": "^4.5.3",
+    "npm": "^5.4.1",
+    "systemjs": "0.20.18",
+    "tsc": "1.20150623.0",
+    "typescript": "^2.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "sass": "node-sass --include-path sass assets/sass/themes/default/index.scss assets/css/style_default.css",
+    "sass_blue": "node-sass --include-path sass assets/sass/themes/blue/index.scss assets/css/style_blue.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://anhzin@github.com/anhzin/practice_fullstack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anhzin/practice_fullstack/issues"
+  },
+  "homepage": "https://github.com/anhzin/practice_fullstack#readme"
+}
