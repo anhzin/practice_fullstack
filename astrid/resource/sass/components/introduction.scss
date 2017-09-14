@@ -1,0 +1,6 @@
+@import "./mixins/introduction.scss";
+/*introdution*/
+.introduction{
+    @include create-introdution($defaul-introduction-font-weight,$defaul-introduction-text-spacing);
+}
+/*end introdution*/

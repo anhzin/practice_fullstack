@@ -1,0 +1,30 @@
+@import "./text.scss";
+@mixin create-service($service-title-font-size, $content-item-title-font-size, $content-item-desc-font-size, $content-item-desc-font-color) {
+    &__title {
+        @include create-text-properties();
+        font-size: $service-title-font-size;
+        display: block;
+    }
+    &__content {
+        min-height: 33%;
+        margin: 10px;
+        &__item {
+            display: inline-block;
+            width: 30%;
+            margin: 5px;
+            text-align: center;
+            &__title {
+                @include create-text-properties($defaul-services-font-weight);
+                font-size: $content-item-title-font-size;
+                margin: 20px 0;
+                display: block;
+            }
+            &__description {
+                @include create-text-properties($defaul-services-font-weight);
+                font-size: $content-item-desc-font-size;
+                color: $content-item-desc-font-color;
+                display: block;
+            }
+        }
+    }
+}

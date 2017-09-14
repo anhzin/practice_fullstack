@@ -1,0 +1,6 @@
+@import "./mixins/multi-cols.scss";
+/*multi-cols*/
+.multi-cols{
+    @include create-multi-cols();
+}
+/*end multi-cols*/
